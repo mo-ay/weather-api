@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100vw;
   transition: background-color 1s ease-in;
+  font-family: "Raleway";
 }
 
 .app__header,
@@ -14,12 +15,74 @@
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
+
 /*  Search bar */
+.search, .search>*{
+  background-color: #759EDA;
+  font-size: 15pt;
+  padding: 10px;
+  border: none;
+}
+#searchfi{
+  color: white;
+  margin: 10px;
+  border: 1px solid rgb(128, 128, 128);
+}
+#serBtn{
+  background-color: #5879C7;
+}
+#searchfi:focus{
+  outline: none;
+}
+#serBtn:focus{
+  
+  outline-color: blue  ;
+}
 
 /* Current weather */
 
 div {
-  border: 5px solid red;
+ border: none;
 }
+#mai{
+  background-color: #9CCEF4;
+}
+.dayWither{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+div.dayWither >*{
+  margin: 5px;
+}
+.temp , .clocks , .status{
+  display: flex;
+  justify-content: space-around;
+ 
+  margin: 0;
+
+}
+.temp , .clocks{
+  text-align: center;
+}
+ul li{
+  display: block;
+  width: 110px;
+
+}
+.restofday{
+ 
+  align-items: initial;
+  margin-top: 50px ;
+  padding-bottom: 50px;
+  width: 90%;
+}
+.statusWriten{
+  color: white;
+}
+
